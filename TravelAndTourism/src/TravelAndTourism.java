@@ -92,9 +92,9 @@ public class TravelAndTourism extends JFrame {
         StringBuilder sb = new StringBuilder();
         for (Booking booking : bookingsList) {
             sb.append("Destination: ").append(booking.destination)
-              .append(", Date: ").append(booking.date)
-              .append(", Number of People: ").append(booking.numberOfPeople)
-              .append("\n");
+                    .append(", Date: ").append(booking.date)
+                    .append(", Number of People: ").append(booking.numberOfPeople)
+                    .append("\n");
         }
         JOptionPane.showMessageDialog(null, sb.toString());
     }
