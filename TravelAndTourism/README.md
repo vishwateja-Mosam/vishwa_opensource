@@ -1,4 +1,4 @@
-#TRAVEL AND TOURISM
+
 This Java code is for a simple Travel and Tourism Management System with a graphical user interface (GUI) using Swing. Here's a brief description of what the code does:
 
 1. **Class Structure:**
