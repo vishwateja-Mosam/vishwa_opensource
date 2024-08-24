@@ -1,18 +1,25 @@
-## Getting Started
+##This Java code is for a simple Travel and Tourism Management System with a graphical user interface (GUI) using Swing. Here's a brief description of what the code does:
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+##Class Structure:
 
-## Folder Structure
+The main class, TravelAndTourism, extends JFrame to create a window-based application.
+An inner class Booking is defined to represent a booking, with fields for the destination, date, and number of people.
+##GUI Components:
 
-The workspace contains two folders by default, where:
+The GUI includes text fields for entering the destination, date, and number of people (tfDestination, tfDate, tfNumberOfPeople).
+There are two buttons: btnBookTour for booking a tour and btnViewTours for viewing all booked tours.
+##Main Functionality:
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+->Booking a Tour:
+The bookTour() method is triggered when the "Book Tour" button is clicked. It reads the input values from the text fields, creates a Booking object, and adds it to the bookingsList.
+If the number of people is not a valid integer, it shows an error message.
+On successful booking, a confirmation message is displayed.
+->Viewing Tours:
+The viewTours() method is triggered when the "View Tours" button is clicked. It displays all the bookings stored in bookingsList in a message dialog.
+##GUI Layout and Setup:
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+The layout is a simple FlowLayout that arranges the components in a single row.
+The JFrame is set up with a title, size, and default close operation. The frame is centered on the screen and made visible when the application starts.
+##Execution:
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+The main() method launches the application by invoking the TravelAndTourism class in the Event Dispatch Thread using SwingUtilities.invokeLater.
